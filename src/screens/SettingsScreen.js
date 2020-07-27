@@ -1,14 +1,13 @@
 import React from 'react';
-import { ExpoConfigView } from '@expo/samples';
+import { Text, SafeAreaView } from 'react-native';
+// import { ExpoConfigView } from '@expo/samples';
 
-export default class SettingsScreen extends React.Component {
-  static navigationOptions = {
-    title: 'app.json',
-  };
+const SettingsScreen = () => {
+	return (
+		<SafeAreaView>
+			<Text>Settings Screen</Text>
+		</SafeAreaView>
+	);
+};
 
-  render() {
-    /* Go ahead and delete ExpoConfigView and replace it with your
-     * content, we just wanted to give you a quick view of your config */
-    return <ExpoConfigView />;
-  }
-}
+export default SettingsScreen;
